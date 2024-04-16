@@ -1,0 +1,26 @@
+{
+  "name": "webpack-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesgunning/webpack-restaurant.git"
+  },
+  "author": "Wes Gunning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesgunning/webpack-restaurant/issues"
+  },
+  "homepage": "https://github.com/wesgunning/webpack-restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
