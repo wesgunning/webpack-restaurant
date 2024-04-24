@@ -1,3 +1,7 @@
+:root {
+    --transparent-bg: hsla(0, 0%, 0%, 0.4);
+    --content-font: font-family: Georgia, 'Times New Roman', Times, serif;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,11 +21,16 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    border: 2px solid red;
-    margin: 1rem;
 }
 nav button {
     font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--transparent-bg);
+    color: white;
+    border-style: none;
+    font-family: var(--content-font);
 }
 #container {
     display: flex;
@@ -31,11 +40,30 @@ nav button {
 #content {
     display: flex;
     flex-direction: column;
-    background-color: hsl(0, 0%, 0%, 0.4);
+    background-color: var(--transparent-bg);
     color: white;
+    font-family: var(--content-font);
     height: 75%;
     width: 60vw;
     border-radius: 1rem;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem 15%;
+}
+#content h1 {
+    font-size: 2.5em;
+}
+#content div.about {
+    font-size: 1.6rem;
+}
+#content h2 {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+}
+#content p {
+    font-size: 1.2em;
+}
+footer, footer>a {
+    color: white;
+    font-family: var(--content-font);
 }
